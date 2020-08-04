@@ -2,6 +2,7 @@ package com.example.activitylifecircle;
 
 /*
 Ejemplo de Context y Activity
+Clase creada para MainActivity
 */
 public class Test {
 
