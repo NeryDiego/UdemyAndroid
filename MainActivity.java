@@ -12,3 +12,10 @@ public class MainActivity extends AppCompatActivity {
         setContentView(R.layout.activity_main);
     }
 }
+
+/*
+Un activity es una "ventana" de nuestra aplicación. En algunos casos se pueden crear ventanas sin ser activities. 
+El MainActivity es donde está la lógica de la ventana.
+
+Un context es una parte de un activity, todo activity tiene un context. 
+*/
