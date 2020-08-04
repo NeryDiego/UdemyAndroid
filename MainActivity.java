@@ -11,6 +11,28 @@ public class MainActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
     }
+
+    @Override
+    protected void onDestroy() {
+        System.out.println("onDestroy");
+        super.onDestroy();
+    }
+
+    @Override protected void onStart(){
+        System.out.println("onStart");
+        super.onStart();
+    }
+
+    @Override protected void onPause(){
+        System.out.println("onPause");
+        super.onPause();
+    }
+
+    @Override protected void onStop(){
+        System.out.println("onStop");
+        super.onStop();
+    }
+
 }
 
 /*
