@@ -10,6 +10,7 @@ import android.widget.Button;
 public class MainActivity extends AppCompatActivity {
 
     private Button btn;
+    private Button btnCall;
     private final String message = "Hello to activity two";
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -30,5 +31,15 @@ public class MainActivity extends AppCompatActivity {
                 startActivity(intent);
             }
         });
+
+        btnCall = (Button) findViewById(R.id.callButton);
+
+        btnCall.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Intent intent = new Intent(MainActivity.this, IntentImplicit.class);
+                startActivity(intent);
+            }
+        });        
     }
 }
