@@ -40,4 +40,11 @@ public class IntentImplicit extends AppCompatActivity {
             }
         });
     }
+    /*
+    Revisamos los permisos de la aplicación
+     */
+    private boolean CheckPermissions(String permission){
+        int result = this.checkCallingOrSelfPermission(permission);
+        return result == PackageManager.PERMISSION_GRANTED;
+    }    
 }
