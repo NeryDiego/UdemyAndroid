@@ -22,13 +22,4 @@ public class MainActivity extends AppCompatActivity {
             }
         });
     }
-
-    /*
-    Ejemplo de detección de Botón
-     */
-    public void miBoton(View v){
-        int a = 5;
-        Toast.makeText(this, "Hola desde mi boton", Toast.LENGTH_LONG).show();
-    }
-
 }
